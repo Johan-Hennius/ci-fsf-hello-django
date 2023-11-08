@@ -9,6 +9,8 @@
     <h1>Add item</h1>
 
     <form method="POST" action="add">
+        <!--Randomly generated value added to hidden input field - ensures data is safe-->
+        {% csrf_token %}
         <div>
             <p>
                 <label for="#id_name">Name: </label>
